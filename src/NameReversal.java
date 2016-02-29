@@ -15,6 +15,7 @@ public class NameReversal {
 		String name = "";
 		System.out.println("What is your name?\n");
 		name = in.nextLine(); //I am an idiot lol why did I initially put this after the assignment of revName
+		in.close();
 		String revName = getStringOfLength(name.length());
 		if (revName.length() == 0) {
 			System.out.println("An error has occured! Setting name to John Smith!");
